@@ -1,0 +1,18 @@
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 91, 33, 21]
+target = 54
+# print(len(nums))
+
+def twosum(nums, number):
+    for i in range(len(nums)):
+        # print(i)
+        for j in range(len(nums)-i):
+            # print(str(j)+"----------------"+str(i))
+            print(str(nums[i]) + "----------------" + str(nums[j+i]))
+            if nums[i] + nums[j+i] == number:
+                return ("down!!" + str(i) + "----" + str(j) + "---------------" + str(nums[i]) + "-----------"+str(nums[j+i]))
+
+
+
+
+run = twosum(nums, target)
+print(run)
